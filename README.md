@@ -1,198 +1,136 @@
 # 📌 Pins Space
 
-**Pins Space** adalah platform berbagi konten yang memungkinkan pengguna untuk membuat akun, membagikan foto dan video, serta berinteraksi dengan pengguna lain melalui fitur like dan comment.
+> **Pins Space** adalah platform berbagi media yang memungkinkan pengguna untuk mengunggah, melihat, dan berinteraksi dengan berbagai konten berupa foto maupun video.
 
-Project ini dibuat sebagai **tugas project kelompok** dengan tujuan mengembangkan sebuah platform sosial media sederhana yang memiliki fitur autentikasi, upload media, dan interaksi antar pengguna.
+Pins Space dikembangkan sebagai **project kelompok** untuk menerapkan konsep pengembangan aplikasi web, autentikasi pengguna, pengelolaan database, upload media, serta interaksi antar pengguna.
+
+---
 
 ## ✨ Features
 
 ### 🔐 Authentication
 
 * Register akun baru
-* Login
+* Login pengguna
 * Logout
 * Sistem autentikasi pengguna
 
-### 🖼️ Upload Media
+### 📸 Media Sharing
 
-Pengguna dapat membagikan berbagai jenis konten:
+Pengguna dapat membagikan berbagai jenis media melalui Pins Space.
 
 * Upload foto
 * Upload video
-* Video dapat memiliki audio/suara
-* Menampilkan konten yang telah di-upload
+* Video dapat menampilkan audio
+* Menampilkan postingan yang telah di-upload
+* Setiap postingan terhubung dengan pengguna yang meng-upload
 
-### ❤️ Interaction
+### ❤️ Social Interaction
 
-Pengguna dapat berinteraksi dengan konten melalui:
+Pengguna dapat berinteraksi dengan postingan melalui:
 
-* Like
-* Comment
+* Like postingan
+* Comment pada postingan
 * Melihat jumlah like
 * Melihat komentar pada postingan
 
-### 👤 User
+---
 
-* Setiap pengguna memiliki akun masing-masing
-* Pengguna dapat membuat dan membagikan postingan
-* Konten terhubung dengan akun pengguna yang meng-upload
+## 🔄 Application Flow
+
+```text
+Register
+   ↓
+Login
+   ↓
+Home / Feed
+   ↓
+Upload Photo / Video
+   ↓
+View Post
+   ↓
+Like / Comment
+```
+
+Pengguna dapat membuat akun dan melakukan login untuk mengakses aplikasi. Setelah berhasil masuk, pengguna dapat melihat postingan, mengunggah foto maupun video, serta berinteraksi dengan postingan pengguna lain melalui fitur like dan comment.
+
+---
 
 ## 🛠️ Technologies
 
 Project ini dikembangkan menggunakan:
 
-* **PHP**
-* **Laravel**
-* **MySQL**
-* **HTML**
-* **CSS**
-* **JavaScript**
-* **Blade Template**
+| Technology | Usage                     |
+| ---------- | ------------------------- |
+| PHP        | Backend Programming       |
+| Laravel    | Web Application Framework |
+| MySQL      | Database Management       |
+| HTML       | Website Structure         |
+| CSS        | Website Styling           |
+| JavaScript | Website Interaction       |
+| Blade      | Laravel Templating        |
+| Vite       | Frontend Asset Management |
 
-> Teknologi dapat disesuaikan dengan implementasi yang digunakan pada project.
+---
 
-## 📂 Project Structure
+## 📸 Application Preview
 
-Struktur utama project:
+Beberapa halaman dan fitur yang tersedia pada Pins Space:
 
-```text
-pins-space/
-├── app/
-├── database/
-├── public/
-├── resources/
-├── routes/
-├── storage/
-├── tests/
-├── .env.example
-├── artisan
-├── composer.json
-└── README.md
-```
+* Login Page
+* Register Page
+* Home / Feed
+* Upload Post
+* Photo Post
+* Video Post
+* Like
+* Comment
 
-## 🚀 Installation
-
-Ikuti langkah berikut untuk menjalankan project secara lokal.
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/aurellia1112/pins-space.git
-```
-
-Masuk ke folder project:
-
-```bash
-cd pins-space
-```
-
-### 2. Install Dependencies
-
-```bash
-composer install
-```
-
-Jika project menggunakan Node.js:
-
-```bash
-npm install
-```
-
-### 3. Setup Environment
-
-Copy file `.env.example` menjadi `.env`:
-
-```bash
-cp .env.example .env
-```
-
-Kemudian generate application key:
-
-```bash
-php artisan key:generate
-```
-
-### 4. Setup Database
-
-Buat database MySQL, kemudian sesuaikan konfigurasi database pada file `.env`.
-
-Contoh:
-
-```env
-DB_DATABASE=pins_space
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-### 5. Run Migration
-
-```bash
-php artisan migrate
-```
-
-Jika project memiliki seeder:
-
-```bash
-php artisan migrate --seed
-```
-
-### 6. Run Project
-
-Jalankan Laravel:
-
-```bash
-php artisan serve
-```
-
-Kemudian buka alamat yang diberikan oleh Laravel pada browser.
-
-Untuk menjalankan frontend jika diperlukan:
-
-```bash
-npm run dev
-```
-
-## 📸 Main Features
-
-Pins Space menyediakan pengalaman berbagi konten dengan konsep social media sederhana.
-
-**Register & Login**
-
-Pengguna dapat membuat akun dan masuk ke dalam aplikasi menggunakan akun yang telah terdaftar.
-
-**Upload**
-
-Pengguna dapat mengunggah foto maupun video. Video yang diunggah juga dapat mempertahankan audio sehingga pengguna dapat menikmati konten secara lebih lengkap.
-
-**Like & Comment**
-
-Pengguna dapat memberikan like dan komentar pada postingan pengguna lain sebagai bentuk interaksi.
+---
 
 ## 🎯 Project Goals
 
-Project ini dibuat untuk menerapkan konsep:
+Pins Space dibuat untuk menerapkan beberapa konsep dalam pengembangan aplikasi web, yaitu:
 
-* Web application development
-* Authentication & authorization
+* Authentication & Authorization
 * CRUD
-* Database relationship
-* File/media upload
-* User interaction
-* Frontend & backend integration
+* Database Management
+* Database Relationship
+* File Upload
+* Image & Video Handling
+* User Interaction
+* Backend Development
+* Frontend Development
+* Frontend & Backend Integration
+
+---
 
 ## 👥 Team
 
-**Pins Space — Kelompok Project**
+Pins Space dikerjakan secara berkelompok oleh:
 
-Nama
+| No. | Nama                        |
+| --: | --------------------------- |
+|   1 | **Ananda Rizkia Wulandari** |
+|   2 | **Aurellia Kalila**         |
+|   3 | **Nazhira Azalea Laura**    |
+|   4 | **Ruthy Mesakh Yahya**      |
+|   5 | **Zahra Millan Dalima**     |
 
-Ananda Rizkia Wulandari
-Aurellia Kalila
-Nazhira Azalea Laura
-Ruthy Mesakh Yahya
-Zahra Millan Dalima
+---
 
-> Silakan ubah nama dan role anggota kelompok sesuai pembagian tugas masing-masing.
+## 📚 Purpose
+
+Project ini dibuat untuk memenuhi tugas **project kelompok** sekaligus sebagai implementasi pembelajaran dalam membangun aplikasi web menggunakan Laravel.
+
+---
+
+## 🔗 Repository
+
+**Pins Space**
+https://github.com/aurellia1112/pins-space
+
+---
 
 ## 📄 License
 
